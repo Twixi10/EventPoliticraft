@@ -1,0 +1,36 @@
+#Partie Animateur :
+
+gui:
+  configuration:
+    title: "&3Animation : &6%title%" # la variable %title% correspond au titre que l'animateur aura donn√© a son event ! || Titre du gui des animateurs
+    items:
+      openRegistration:
+        itemName: "&aOuvrir les inscriptions"
+        itemLore: "&eClique ici pour ouvrir les inscriptions \n&e‡ tout les joueurs !"
+      closeRefistration:
+        itemName: "&cFermet les inscriptions"
+        itemLore: "&eClique ici pour fermer les inscriptions, \n&eLes joueurs en cours d'inscription pourrons\n&eterminer avant de ne plus pouvoir !"
+      enableBroadcast:
+        itemName: "&aActiver les annonces"
+        itemLore: "&eActiver les annonces permet a tout les \n&ejoueurs du serveur de voir les annonces tel que\n&ele timer avant la fin, le gagnes etc ..."
+      disableBroadcast:
+        itemName: "&cDÈsactiver les annonces"
+        itemLore: "&eClique ici pour dÈsactiver les annonces !"
+      enableConsolation:
+        itemName: "&aActiver les lot de consolation"
+        itemLore: "&3Clique gauche : &eActive/DÈsactive les lot de consolation \n&3Clique droit : &eDÈfinir le lot de consolation"
+      disableConsolation:
+        itemName: "&cDÈsactiver les lot de consolation"
+        itemLore: "&3Clique gauche : &eActive/DÈsactive les lot de consolation \n&3Clique droit : &eDÈfinir le lot de consolation"
+
+messages:
+  confirm: "%logo% &cVoulez vous vraiment ex√©cuter cette commande ? &7(%command%) &eSi c'est le cas faite &6/event confirm" 
+  # Message qui demande si il est sur de cr√©e un event alors qu'il y en a un toujour en cours
+  # Variables : %logo% corespong au logo d√©fini dans config.yml || %command% corresponf a la command qui va √™tre valid√©e
+  createAnim: "%logo% &aVous venez de cr√©er une animation ! Elle porte le nom de : %name%" 
+  #Message qui confirm la cr√©ation d'un event
+  # Variable : %name% = le nom de l'event
+  NothingToConfirm: "%logo% &cVous n'avez aucune commande a confirmer !"
+  # Message si un animateur fait la commande /event confirm et qu'il n'a rien a confirmer
+  OpenWhenEventIsNull : "%logo% &cIl n'y a aucun event pour le moment"
+  #Message si un animateur ouvre le menu de configuration mais qu'il n'y en a pas 
